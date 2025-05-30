@@ -26,8 +26,8 @@
 #  Google search results) and in your feed.xml site description.
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://pulsy-bh.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-# baseurl: "/veranda-77.com"
-baseurl: ""
+baseurl: "/veranda-77.com"
+# baseurl: ""
 
 # Build settings
 plugins:
@@ -40,13 +40,13 @@ source              : ./src
 destination         : ./_site
 
 
-layouts_dir         : _layouts # Don't rename this, watch wouldn't't work
-data_dir            : _data # Don't rename this, watch wouldn't't work
-includes_dir        : _includes # Don't rename this, watch wouldn't't work
+# layouts_dir         : _layouts # Don't rename this, watch wouldn't't work
+# data_dir            : _data # Don't rename this, watch wouldn't't work
+# includes_dir        : _includes # Don't rename this, watch wouldn't't work
 
-# layouts_dir         : ./src/_layouts # Don't rename this, watch wouldn't't work
-# data_dir            : ./src/_data # Don't rename this, watch wouldn't't work
-# includes_dir        : ./src/_includes # Don't rename this, watch wouldn't't work
+layouts_dir         : ./src/_layouts # Don't rename this, watch wouldn't't work
+data_dir            : ./src/_data # Don't rename this, watch wouldn't't work
+includes_dir        : ./src/_includes # Don't rename this, watch wouldn't't work
 
 # sass:
 #   sass_dir: assets/css/_scss
