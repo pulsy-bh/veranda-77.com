@@ -21,12 +21,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon" />
 
-    <title>Contactez-nous pour avoir plus d'informations sur nos prestations</title>
-    <meta name="description" content="Contactez-nous dès maintenant pour discuter de votre projet de véranda. Notre équipe est prête à vous accompagner et répondre à toutes vos questions !" />
+    <title>Notre formulaire de devis gratuit disponible en ligne</title>
+    <meta name="description" content="Nous pouvons vous faire une estimation du coût de nos prestations pour vos vérandas et pergolas, il suffit de remplir notre formulaire de devis en ligne !" />
     <meta name="keywords" content="" />
     
     <!-- URL canoniques pour le SEO -->
-    <link rel="canonical" href="http://localhost:4000/contact">
+    <link rel="canonical" href="http://localhost:4000/devis.html">
 
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -147,84 +147,106 @@
     
     <section class="slider contact-header">
 	<div class="container">
-		<h1>Contactez-nous pour toutes informations complémentaires</h1>
-		<h2>Pour toutes informations complémentaires</h2>
+		<h1>Devis</h1>
 	</div>
 </section>
-<section class="infos-contact">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-4">
-				<h2>Email & Téléphone</h2>
-				<p>
-					<a href="mailto:contact@veranda-77.com">contact@veranda-77.com</a>
-				</p>
-				<p>
-					<a href="tel:01 85 53 89 76">01 85 53 89 76</a>
-				</p>
-			</div>
-			<div class="col-sm-4">
-				<h2>Réseaux sociaux</h2>
-				<ul class="social">
-					<li>
-						<a href="#" class="fa fa-facebook"></a>
-					</li>
-					<li>
-						<a href="#" class="fa fa-instagram"></a>
-					</li>
-					<li>
-						<a href="#" class="fa fa-google-plus"></a>
-					</li>
-					<li>
-						<a href="#" class="fa fa-youtube"></a>
-					</li>
-				</ul>
+
+<section class="devis">
+	<div id="devis">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<form action="https://formspree.io/f/meogaalj" method="POST">
+						<div class="row">
+							<div class="col-sm-5">
+								<fieldset>
+									<legend>Coordonnées</legend>
+
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="prenom">Prénom*</label>
+												<input required type="text" class="form-control" id="prenom" name="prenom">
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="nom">Nom*</label>
+												<input required type="text" class="form-control" id="nom" name="nom">
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<label for="adresse">Adresse</label>
+												<input type="text" class="form-control" id="adresse" name="adresse">
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-5">
+											<div class="form-group">
+												<label for="code_postal">Code postal*</label>
+												<input required type="text" class="form-control" id="code_postal" name="code_postal">
+											</div>
+										</div>
+										<div class="col-sm-7">
+											<div class="form-group">
+												<label for="ville">Ville</label>
+												<input type="text" class="form-control" id="ville" name="ville">
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<label for="email">E-mail*</label>
+												<input required type="email" class="form-control" id="email" name="email">
+											</div>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-12">
+											<div class="form-group">
+												<label for="telephone">Téléphone*</label>
+												<input required type="tel" class="form-control" id="telephone" name="telephone">
+											</div>
+										</div>
+									</div>
+								</fieldset>
+							</div>
+
+							<div class="col-sm-6 col-sm-offset-1">
+								<fieldset>
+									<legend>Demande</legend>
+									<div class="form-group">
+										<label for="surface">Surface approximative*</label>
+										<select required name="surface" class="form-control" id="surface">
+											<option value="">---</option>
+											<option value="Inférieur à 20m²">Inférieur à 20m²</option>
+											<option value="De 20 à 30m²">De 20 à 30m²</option>
+											<option value="Supérieur à 30m²">Supérieur à 30m²</option>
+										</select>
+									</div>
+								</fieldset>
+								<div class="form-group">
+									<label for="message">Message</label>
+									<textarea rows="14" name="message" class="form-control" id="message"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class="buttondevis text-center">
+							<button type="submit" class="button">Envoyer</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<section class="pre-contact">
-	<div class="container">
-		<h2 class="text-left">Contactez-nous </h2>
-		<p>Pour une demande d’information complémentaire ou une simple question, remplissez notre formulaire, un expert vous répondra dans les 48 heures ouvrées.</p>
-		<form action="https://formspree.io/f/mzzreevn" method="POST">
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="form-group">
-        <i class="fa fa-user-o" aria-hidden="true"></i>
-        <input required type="text" class="form-control" id="nom" name="nom" placeholder="Nom">
-      </div>
-    </div>
-
-    <div class="col-sm-4">
-      <div class="form-group">
-        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-        <input required type="email" class="form-control" id="email" name="email" placeholder="E-mail">
-      </div>
-    </div>
-
-    <div class="col-sm-4">
-      <div class="form-group">
-        <i class="fa fa-phone" aria-hidden="true"></i>
-        <input required type="tel" class="form-control" id="telephone" name="telephone" placeholder="Téléphone">
-      </div>
-    </div>
-
-    <div class="col-sm-12">
-      <div class="form-group">
-        <i class="fa fa-comment-o" aria-hidden="true"></i>
-        <textarea required name="message" class="form-control" rows="5" placeholder="Message"></textarea>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-xs-12">
-      <br><br>
-      <button type="submit" class="btn button">Envoyer</button>
-    </div>
-  </div>
-</form>
 	</div>
 </section>
 
@@ -296,7 +318,7 @@
 			<div class="col-sm-4">
 				<p class="title">Inscrivez-vous à notre Newsletter</p>
 				<div id="form-newsletter">
-  <form action="/contact#form-newsletter" method="post">
+  <form action="/devis.html#form-newsletter" method="post">
     <div class="col-sm-12">
       <div class="form-group has-feedback ">
         <i class="fa fa-envelope-o"></i>
