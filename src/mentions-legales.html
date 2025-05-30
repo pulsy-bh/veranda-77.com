@@ -1,0 +1,72 @@
+---
+layout: default
+permalink: /legales-mentions/
+title: "Mentions légales"
+description: "Mentions légales"
+---
+
+<div id="mentions-legales">
+	<div class="container">
+		<h1>Mentions légales</h1>
+		<p>Ces informations concernent explicitement le site Internet <b><?=$conf_name_website?></b>.</p>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h2 class="panel-title">Éditeur du site :</h2>
+			</div>
+			<div class="panel-body">
+				<h3>{{ site.data.company.conf_owner }}</h3>
+				<p>Forme juridique : Société par actions simplifiée (SAS)<br>
+				SIREN : {{ site.data.company.conf_owner_siren }}<br>
+				Adresse : {{ site.data.company.conf_owner_headOffice }}<br>
+				Représentée par : Dimitri SACQUET, en qualité de Président et
+				Natacha MAZURE, en qualité de Directeur général.</p>
+			</div>
+		</div>
+		<br>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h2 class="panel-title">Hébergeur</h2>
+			</div>
+			<div class="panel-body">
+				<p>{{ site.data.company.conf_hebergement }}</p>
+			</div>
+		</div>
+		<br>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h2 class="panel-title">Conception et réalisation du site :</h2>
+			</div>
+			<div class="panel-body">
+				<h3>BH Internet</h3>
+				<p>Adresse : 7 avenue de l’orme à Martin, EVRY-COURCOURONNES (91080)</p>
+			</div>
+		</div>
+		<br>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h2 class="panel-title">Informations générales :</h2>
+			</div>
+			<div class="panel-body">
+				<p>BAIES ET VERANDAS DE FRANCE est spécialisée dans le secteur d'activité du commerce de gros (commerce interentreprises) d'autres biens domestiques. L'entreprise est en activité depuis plus de 10 ans et compte entre 6 et 9 salariés.</p>
+			</div>
+		</div>
+		<br>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h2 class="panel-title">Droits d'auteur et propriété intellectuelle :</h2>
+			</div>
+			<div class="panel-body">
+				<p>L'ensemble de ce site relève des législations françaises et internationales sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques. La reproduction de tout ou partie de ce site sur un support électronique, quel qu'il soit, est formellement interdite sauf autorisation écrite de l'éditeur.</p>
+			</div>
+		</div>
+		<br>
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h2 class="panel-title">Contact :</h2>
+			</div>
+			<div class="panel-body">
+				<p>Pour toute question ou demande d'information concernant le site, ou tout signalement de contenu ou d'activités illicites, l'utilisateur peut contacter l'éditeur à l'adresse suivante : <a href="mailto:{{ site.data.company.email }}" class="text-theme">{{ site.data.company.email }}</a>.</p>
+			</div>
+		</div>
+	</div>
+</div>
