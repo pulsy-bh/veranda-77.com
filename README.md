@@ -119,16 +119,6 @@ Then apply them to the site:
 ```  
 {% picture custom-theme assets/img/image.png %}  
 ```  
-Ps : make sure the images are not webp format , is that's the case please convert them , changing the extension is not gonna work (the problem is only on the server side , all gonna work locally fine ) .
-
-If needed, the complete documentation is here: [Jekyll Picture Tag](https://rbuchberger.github.io/jekyll_picture_tag/)
-
-## ADDING CAPTCHAS
-
-console:       https://www.google.com/u/2/recaptcha/admin
-with email:    bhinternetcaptcha@gmail.com
-password:      xJ_Zom5D31ofkbZ$
-
 /!\ 
 in authorized domains, ALWAYS include: 
     -localhost 
