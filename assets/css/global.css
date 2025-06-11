@@ -7232,6 +7232,16 @@ section.one1 h2:before {
     color: inherit
 }
 
+@media (max-width: 768px) {
+    section.one1 h2{
+        font-size: 25px;
+    }
+    section.one1 h2:before{
+        width: 20px;
+        margin-right: 10px;
+    }
+}
+
 section.one1 p {
     font-size: 18px;
     line-height: 25px;
