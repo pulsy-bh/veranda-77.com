@@ -1,11 +1,15 @@
-{% if site.recaptcha_site_key %}
-<script src="https://www.google.com/recaptcha/api.js?render={{ site.recaptcha_site_key }}"></script>
-{% endif %}
-
+<!-- jQuery et Bootstrap en premier -->
 <script src="{{ '/assets/js/jquery-1.11.0.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/bootstrap.min.js' | relative_url }}"></script>
-<script src="https://use.fontawesome.com/24b7f338c4.js"></script>
 
+<!-- reCAPTCHA avec callback -->
+<script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>
+
+<!-- Nos scripts personnalisés qui dépendent de jQuery -->
+<script src="{{ '/assets/js/formSubmit.js' | relative_url }}"></script>
+
+<!-- Autres bibliothèques -->
+<script src="https://use.fontawesome.com/24b7f338c4.js"></script>
 <script src="{{ '/assets/js/bootstrap-datepicker.js' | relative_url }}" type="text/javascript"></script>
 <script src="{{ '/assets/js/clockpicker.js' | relative_url }}" type="text/javascript"></script>
 <script src="{{ '/assets/js/datepicker-locales/bootstrap-datepicker.fr.js' | relative_url }}" type="text/javascript"></script>

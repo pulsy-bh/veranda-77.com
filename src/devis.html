@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /devis/
 title: "Notre formulaire de devis gratuit disponible en ligne"
 description: "Nous pouvons vous faire une estimation du coût de nos prestations pour vos vérandas et pergolas, il suffit de remplir notre formulaire de devis en ligne !"
 ---
@@ -15,7 +16,15 @@ description: "Nous pouvons vous faire une estimation du coût de nos prestations
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<form action="https://formspree.io/f/meogaalj" method="POST">
+					<form class="form-horizontal p20" id="devisForm" method="post" action="{{ site.data.company.url.notify }}">
+						<input type="hidden" name="lang" value="fr" />
+						<input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
+						<input type="hidden" name="type" value="devis" />
+						<input type="hidden" name="website" value="{{ site.data.company.website }}" />
+						<input type="hidden" name="lang" value="{{ site.data.company.lang }}" />
+						<input type="hidden" name="firstName" value="" />
+						<input type="hidden" name="condition" value="on" />
+						<input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}" />
 						<div class="row">
 							<div class="col-sm-5">
 								<fieldset>
@@ -24,14 +33,14 @@ description: "Nous pouvons vous faire une estimation du coût de nos prestations
 									<div class="row">
 										<div class="col-sm-6">
 											<div class="form-group">
-												<label for="prenom">Prénom*</label>
-												<input required type="text" class="form-control" id="prenom" name="prenom">
+												<label for="lastName">Prénom*</label>
+												<input required type="text" class="form-control" id="lastName" name="lastName">
 											</div>
 										</div>
 										<div class="col-sm-6">
 											<div class="form-group">
-												<label for="nom">Nom*</label>
-												<input required type="text" class="form-control" id="nom" name="nom">
+												<label for="name">Nom*</label>
+												<input required type="text" class="form-control" id="name" name="name">
 											</div>
 										</div>
 									</div>
@@ -39,8 +48,8 @@ description: "Nous pouvons vous faire une estimation du coût de nos prestations
 									<div class="row">
 										<div class="col-sm-12">
 											<div class="form-group">
-												<label for="adresse">Adresse</label>
-												<input type="text" class="form-control" id="adresse" name="adresse">
+												<label for="address">Adresse</label>
+												<input type="text" class="form-control" id="address" name="address">
 											</div>
 										</div>
 									</div>
@@ -48,14 +57,14 @@ description: "Nous pouvons vous faire une estimation du coût de nos prestations
 									<div class="row">
 										<div class="col-sm-5">
 											<div class="form-group">
-												<label for="code_postal">Code postal*</label>
-												<input required type="text" class="form-control" id="code_postal" name="code_postal">
+												<label for="zipCode">Code postal*</label>
+												<input required type="text" class="form-control" id="zipCode" name="zipCode">
 											</div>
 										</div>
 										<div class="col-sm-7">
 											<div class="form-group">
-												<label for="ville">Ville</label>
-												<input type="text" class="form-control" id="ville" name="ville">
+												<label for="city">Ville</label>
+												<input type="text" class="form-control" id="city" name="city">
 											</div>
 										</div>
 									</div>
@@ -64,7 +73,7 @@ description: "Nous pouvons vous faire une estimation du coût de nos prestations
 										<div class="col-sm-12">
 											<div class="form-group">
 												<label for="email">E-mail*</label>
-												<input required type="email" class="form-control" id="email" name="email">
+												<input required type="email" class="form-control" id="email" name="email" placeholder="Email">
 											</div>
 										</div>
 									</div>
@@ -73,7 +82,7 @@ description: "Nous pouvons vous faire une estimation du coût de nos prestations
 										<div class="col-sm-12">
 											<div class="form-group">
 												<label for="telephone">Téléphone*</label>
-												<input required type="tel" class="form-control" id="telephone" name="telephone">
+												<input required type="tel" class="form-control" id="telephone" name="telephone" placeholder="Téléphone">
 											</div>
 										</div>
 									</div>
@@ -99,6 +108,15 @@ description: "Nous pouvons vous faire une estimation du coût de nos prestations
 								</div>
 							</div>
 						</div>
+						<div class="col-md-12" style="padding-left: 20px;">
+							<div id="contact-form-response"></div>
+							<div class="form-group d-flex justify-content-center">
+							  <div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client}}">
+							  </div>
+							  <br />
+							  <input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
+							</div>
+						  </div>
 						<div class="buttondevis text-center">
 							<button type="submit" class="button">Envoyer</button>
 						</div>

@@ -64,3 +64,14 @@ conf_comDirector: "Prénom NOM"
 ovh: "<h2>OVH</h2>Société par actions simplifiée au capital de 10 000 000 €,<br>Dont le siège social est établi 2, rue Kellermann 59100 Roubaix<br>Immatriculée au Registre du Commerce et des Sociétés sous le numéro RCS Tourcoing 424 761 419"
 gandi: "<h2>Gandi</h2>Société par actions simplifiée au capital 300 000 €,<br>Dont le siège social est établi 63 Boulevard Massena 75013 Paris<br>Immatriculée au Registre du Commerce et des Sociétés sous le numéro RCS Paris B 423 093 459"
 conf_hebergement: "gandi"
+
+website: 227
+
+recaptcha:
+  client: 6LdQ4HsrAAAAAJKfIZ82Q35fmGg1hQdj16E6BN_h
+  server: 6LdQ4HsrAAAAAFXxe5_bGcd6EQsj8vKjnBe8-eJO
+  
+lang: fr
+url:
+  notify: 'https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify'
+  redirect: '/message-envoye'
