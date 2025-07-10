@@ -7397,6 +7397,19 @@ section.devis input.form-control {
     border-bottom: 1px solid #c4c4c4
 }
 
+section.devis .form-group {
+    margin-bottom: 20px !important;
+}
+
+section.devis .row {
+    margin-bottom: 15px;
+}
+
+
+.form-control-80{
+    width: 80% !important;
+}
+
 section.contact-header {
     background-image: url(../../assets/img/contact-header.jpg)
 }
