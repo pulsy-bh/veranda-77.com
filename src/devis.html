@@ -16,7 +16,7 @@ description: "Nous pouvons vous faire une estimation du coût de nos prestations
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<form class="form-horizontal p20" id="devisForm" method="post" action="{{ site.data.company.url.notify }}">
+					<form  id="devisForm" method="post" action="{{ site.data.company.url.notify }}">
 						<input type="hidden" name="lang" value="fr" />
 						<input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
 						<input type="hidden" name="type" value="devis" />
@@ -34,7 +34,7 @@ description: "Nous pouvons vous faire une estimation du coût de nos prestations
 										<div class="col-sm-6">
 											<div class="form-group">
 												<label for="lastName">Prénom*</label>
-												<input required type="text" class="form-control form-control-80" id="lastName" name="lastName">
+												<input required type="text" class="form-control" id="lastName" name="lastName">
 											</div>
 										</div>
 										<div class="col-sm-6">
@@ -58,7 +58,7 @@ description: "Nous pouvons vous faire une estimation du coût de nos prestations
 										<div class="col-sm-5">
 											<div class="form-group">
 												<label for="zipCode">Code postal*</label>
-												<input required type="text" class="form-control form-control-80" id="zipCode" name="zipCode">
+												<input required type="text" class="form-control" id="zipCode" name="zipCode">
 											</div>
 										</div>
 										<div class="col-sm-7">
